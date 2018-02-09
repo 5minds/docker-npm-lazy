@@ -6,6 +6,8 @@ To run with the default config:
 docker run --detach --publish 8080:8080 5minds/npm-lazy
 ```
 
+**Remember to set the externalUrl in the config-file**
+
 To use your own config-file:
 
 ```
