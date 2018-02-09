@@ -11,3 +11,16 @@ To use your own config-file:
 ```
 docker run --detach --publish 8080:8080 --volume PATH/TO/YOUR/CONFIG.js:/usr/src/app/npm_lazy.config.js:ro 5minds/npm-lazy
 ```
+
+To build the image:
+
+```
+docker build --tag npm-lazy .
+```
+
+To publish the image, be logged in and run:
+
+```
+docker tag npm-lazy 5minds/npm-lazy:latest
+docker push 5minds/npm-lazy:latest
+```
